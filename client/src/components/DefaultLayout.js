@@ -106,7 +106,7 @@ const DefaultLayout = (props) => {
             {
               key: '3',
               icon: <UserOutlined />,
-              label: <Link to={`/profile/${user._id}`}>Profile</Link>,
+              label: <Link to={`/profile/${user?._id}`}>Profile</Link>,
             },
             {
               key: '4',
