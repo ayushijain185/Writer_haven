@@ -24,7 +24,7 @@ const DefaultLayout = (props) => {
   const pathToKey = {
     '/': '1',
     '/addpost': '2',
-    '/profile/${userid}':'3',
+   [`/profile/${userid}`]:'3',
     '/allusers': '4',
     '/saved': '5',
     '/logout': '6',
