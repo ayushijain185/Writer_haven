@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "proxy": "https://writer-s-haven-2.onrender.com",
+  "proxy": "https://writer-haven-backend.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
