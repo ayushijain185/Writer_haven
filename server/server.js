@@ -20,7 +20,7 @@ app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 
 app.use(cors({
-  origin: 'https://writer-haven-kcyzb7tzd-ayushijain185s-projects.vercel.app', // Allow your Vercel app
+  origin: 'https://writer-haven-jsijpigs6-ayushijain185s-projects.vercel.app', // Allow your Vercel app
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
 
