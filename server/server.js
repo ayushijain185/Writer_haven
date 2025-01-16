@@ -16,6 +16,12 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
+const cors = require('cors');
+app.use(cors({
+  origin: 'https://writer-haven-kcyzb7tzd-ayushijain185s-projects.vercel.app', // Allow your Vercel app
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+}));
+
 connectDb();
 
 app.use('/api/v1/user',userRoute);
