@@ -5,6 +5,8 @@ import bodyParser from 'body-parser';
 import connectDb from './config/db.js'
 import userRoute from './routes/userRoute.js'
 import postRoute from './routes/postRoute.js'
+import cors from 'cors';
+
 dotenv.config();
 
 const PORT = process.env.PORT || 5001;
@@ -16,7 +18,7 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
-const cors = require('cors');
+
 app.use(cors({
   origin: 'https://writer-haven-kcyzb7tzd-ayushijain185s-projects.vercel.app', // Allow your Vercel app
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
